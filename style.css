@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.font-lsf {
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.font-shdw-strong {
+    text-shadow: 2px 2px 5px black;
+}
+
+.font-shdw-light {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+body {
+    background-image: url(/assets/images/featured_code.jpg);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 46, 46);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    height: 50px;
+    width: 100%;
+    justify-content: space-around;
+    font-weight: 300;
+    font-size: 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+.header a:hover {
+    color: darkgrey;
+    transition: all .15s linear;
+}
+
+.header-navbar {
+    gap: 15px;
+}
+
+.home-title {
+    height: 100vh;
+    font-size: 48px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.self-intro {
+    background-color: rgba(46, 46, 46, 0.80);
+    backdrop-filter: blur(15px);
+    font-size: 26px;
+    border-radius: 10px;
+    margin: 100px;
+    padding: 25px;
+}
