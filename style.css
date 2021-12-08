@@ -11,28 +11,17 @@
     color: white;
 }
 
-#header1 {
-    height: 120vh;
-    background-image: url(assets/images/featured_code.jpg);
-    background-color: rgb(56, 56, 56);
-    background-size: cover;
-    font-size: 20px;
-    background-repeat: no-repeat;
-    background-attachment: local;
-}
-
-#header2 {
-    height: 120vh;
-    background-image: url(assets/images/796839.webp);
-    background-color: rgb(56, 56, 56);
-    background-size: cover;
-    font-size: 20px;
-    background-repeat: no-repeat;
-    background-attachment: local;
-}
-
 body {
     background-color: rgb(56, 56, 56);
+}
+
+header {
+    height: 120vh;
+    background-color: rgb(56, 56, 56);
+    background-size: cover;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-attachment: local;
 }
 
 header p {
@@ -48,6 +37,14 @@ header a:hover {
     transition: all 0.25s;
 }
 
+#header-home {
+    background-image: url(assets/images/featured_code.jpg);
+}
+
+#header-projektipaevad1 {
+    background-image: url(assets/images/796839.webp);
+}
+
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -56,6 +53,44 @@ header a:hover {
 @keyframes zoomIn {
     0% {font-size: 0;}
     100% {font-size: 1;}
+}
+
+/**************************
+## GLOBAL NAVIGATION BAR ##
+**************************/
+
+.header-nav-panel {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(42, 42, 42, 0.75);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.header-nav-panel a {
+    font-weight: 300;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+}
+
+.hnav-links {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hnav-links p {
+    font-size: 42px;
+    font-weight: 200;
+    -webkit-transform: scale(2, 1);
 }
 
 .dropdown {
@@ -91,24 +126,6 @@ header a:hover {
     display: block;
 }
 
-.header-nav-panel {
-    position: fixed;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    background-color: rgba(42, 42, 42, 0.75);
-    backdrop-filter: blur(10px);
-    z-index: 1;
-}
-
-.header-nav-panel a {
-    font-weight: 300;
-    text-decoration: none;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
-}
-
 .title {
     height: 80%;
     width: 100%;
@@ -121,6 +138,10 @@ header a:hover {
     -webkit-animation: zoomIn 1s ease;
 }
 
+/******************
+## PAGE CONTENTS ##
+******************/
+
 .gradient {
     width: 100%;
     height: 25%;
@@ -128,23 +149,7 @@ header a:hover {
     background-image: linear-gradient(0deg, rgb(56, 56, 56) 5%, transparent);
 }
 
-.hnav-links {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 450px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.hnav-links p {
-    font-size: 42px;
-    font-weight: 200;
-    -webkit-transform: scale(2, 1);
-}
-
-.self-intro-container {
+.text-container {
     background-color: rgb(56, 56, 56);
     padding-left: 10%;
     padding-right: 10%;
@@ -152,7 +157,7 @@ header a:hover {
     font-size: 24px;
 }
 
-.text-intro {
+.text-content {
     padding: 2%;
     background-color: rgb(50, 50, 50);
     border-radius: 10px;
@@ -161,31 +166,31 @@ header a:hover {
     margin-bottom: 50px;
 }
 
-.text-intro h3 {
+.text-content h3 {
     font-weight: 400;
     margin-bottom: 5px;
 }
 
-.text-intro p {
+.text-content p {
     font-weight: 300;
     margin-bottom: 50px;
 }
 
-#prjktipv-text p {
+#text-container-projektipaev1 p {
     margin-bottom: 10px;
 }
 
-#prjktipv-text a {
+#text-container-projektipaev1 a {
     text-decoration: none;
     color: wheat;
 }
 
-#prjktipv-text a:hover {
+#text-container-projektipaev1 a:hover {
     color: rgba(245, 222, 179, 0.5);
     transition: all 0.25s;
 }
 
-#prjktipv-text img {
+#text-container-projektipaev1 img {
     width: 100%;
-    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
 }
