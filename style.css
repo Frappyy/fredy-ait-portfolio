@@ -11,6 +11,10 @@
     color: white;
 }
 
+.img-box-shadow {
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
+}
+
 body {
     background-color: rgb(56, 56, 56);
 }
@@ -43,6 +47,18 @@ header a:hover {
 
 #header-projektipaevad1 {
     background-image: url(assets/images/796839.webp);
+}
+
+#header-more-info {
+    background-image: url(assets/images/board_wallpaper.jpg);
+}
+
+#header-projects {
+    background-image: url(assets/images/blueprint_wallpaper.jpg);
+}
+
+#header-cv {
+    background-image: url(assets/images/curricilum_vitae_wallpaper.jpg);
 }
 
 @keyframes fadeIn {
@@ -82,7 +98,7 @@ header a:hover {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 450px;
+    width: 550px;
     display: flex;
     justify-content: space-around;
 }
