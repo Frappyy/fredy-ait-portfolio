@@ -305,8 +305,9 @@ header a:hover {
     box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
 }
 
-#text-container-cv {
+#pdf-cv {
     height: 200vh;
+    width: 100%;
 }
 
 /***********
@@ -372,6 +373,10 @@ header a:hover {
 }
 
 @media only screen and (max-width: 1024px) {
+    #pdf-cv {
+        height: 100%;
+    }
+
     .hamburger-menu {
         display: flex;
     }
@@ -382,14 +387,6 @@ header a:hover {
 
     .title {
         font-size: 16px;
-    }
-
-    #pdfimport {
-        height: 400px;
-    }
-
-    #text-container-cv {
-        height: 100vh;
     }
 
     .text-content {
