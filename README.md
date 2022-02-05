@@ -1,2 +1,2 @@
 # fredy-ait-portfolio
-Portfolio for Fredy Ait
+My old portfolio website. New one can be found here: https://github.com/Frappyy/portfolio-tailwind.
